@@ -16,3 +16,10 @@ def main():
             break
         except ValueError:
             print("Invalid input. Please enter a valid number.")
+    # While loop to obtain the value unit of temp from the user
+    while True:
+        unit = input("Enter the unit of the temperature value (C for Celsius or F for Fahrenheit): ").upper()
+        if unit == 'C' or unit == 'F':
+            break
+        else:
+            print("Invalid input. Please enter either 'C' or 'F'.")
